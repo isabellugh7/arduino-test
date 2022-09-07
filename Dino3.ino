@@ -34,7 +34,7 @@ void loop() {
     if (cacti < 560 and cacti2 < 560) {
       cactiServo.write(15);
       digitalWrite(blue, HIGH);
-      delay(100);
+      delay(100);    // at some point this will be able to detect different kind of cacti clusters and jump accordingly
     } else {
       digitalWrite(yellow, HIGH);
       cactiServo.write(15); 
